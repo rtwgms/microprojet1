@@ -18,13 +18,20 @@
     
     sourceWidth="800" sourceHeight="600" displayWidth="1280" displayHeight="720">
 
+    <a-assets>
+      <!--point to you *mp4 file : h264, AAC etc-->
+      <video src="video.mp4" muted="true" loop="true" controls="false" playsinline webkit-playsinline
+        type='video/mp4' id="vid"></video>
+</a-assets>
       
         <a-marker type='barcode' value='0'>
    
-            <a-text value="LESBIGSLIMES" 
+          <a-video src="#vid" width"8" height"4.5" rotation="270 0 0"></a-video>
+
+            <a-text value="<<3>" 
             side="double" position = "0 0 -1" rotation="270 0 0" 
             width="8"
-            color="red" align="center" >
+            color="black" align="center" >
             </a-text>
 
         </a-marker>
